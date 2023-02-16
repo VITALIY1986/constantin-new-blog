@@ -28,7 +28,7 @@ console.log(morePosts[0].coverImage.url)
                 <Magazine.Cover image={magazineCover}>
                     <div className="absolute left-3 md:left-8 bottom-3 md:bottom-8">
                         <Animate name="fadeIn" delay="1.2s" duration="1s">
-                            <Image alt="alt" src={morePosts[0].coverImage.url} width={69} height={69} />
+                            <Image alt="alt" src={morePosts[0].coverImage.url} width={69} height={69}   unoptimized={true} />
                         </Animate>
                     </div>
                     <Heading className="absolute left-3 md:left-8 top-32 md:top-48 text-white">
