@@ -51,7 +51,7 @@ function Fashion({ preview, allPosts }) {
                                     <br />
                                     medicină internă
                                     <br />
-                                    <b className="text-xs text-primary">How to Shop Mindfully</b>
+                                    <b className="text-xs text-primary">Strada Pantelimon Halipa 14, Iași 700661</b>
                                 </p>
                             </Animate>
                         </Heading.Subtitle>
