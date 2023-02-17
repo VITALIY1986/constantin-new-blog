@@ -38,18 +38,18 @@ function Fashion({ preview, allPosts }) {
                         <Heading.Title>
                             <Animate name="fadeInRightSm" delay="1.2s" duration="2s">
                                 <h2 className="text-5xl text-gray-600 uppercase">
-                                    Strong
+                                Gabriela 
                                     <br />
-                                    Style
+                                    Grigoras
                                 </h2>
                             </Animate>
                         </Heading.Title>
                         <Heading.Subtitle>
                             <Animate name="fadeIn" delay="1.8s" duration="3s">
                                 <p className="text-gray-500">
-                                    New Ways to Wear Denim
+                                Medic specialist 
                                     <br />
-                                    Belt Bags make a Comeback
+                                    medicină internă
                                     <br />
                                     <b className="text-xs text-primary">How to Shop Mindfully</b>
                                 </p>
@@ -70,11 +70,11 @@ function Fashion({ preview, allPosts }) {
                         </Swiper>
                     </Block>
                     <Block className="px-4 md:px-8 pb-8 mb-16">
-                        <Row className="row row-md">
+                        <Row className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-3">
                             {morePosts &&
                                 morePosts.length > 0 &&
                                 morePosts.slice(0, 9).map((item, index) => (
-                                    <Col key={item.id} className="col-sm-12 col-md-6 col-lg-4">
+                                    <Col key={item.id} className="">
                                         <Animate name="fadeInUpXs" delay={`${index + 3}00ms`} duration="1.8s">
                                             <Post post={item} model={1} image_width={334} image_height={334} image_quality={100} />
                                         </Animate>

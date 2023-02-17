@@ -88,69 +88,42 @@ export default function Header(props) {
 
 const links = [
     {
-        title: "Demos",
+        title: "Home",
         path: "/",
         items: [],
     },
     {
-        title: "Travel",
+        title: "Socials",
         path: "#",
         items: [
             {
-                title: "Travel. Demo 1",
-                path: "travel-1",
+                title: "instagram",
+                path: "/",
             },
             {
-                title: "Travel. Demo 2",
-                path: "travel-2",
+                title: "Facebook",
+                path: "/",
             },
         ],
     },
     {
-        title: "Fashion",
+        title: "Spitalul Clinic",
         path: "#",
         items: [
             {
-                title: "Fashion. Demo 1",
-                path: "fashion-1",
+                title: "Iasi",
+                path: "/",
             },
             {
-                title: "Fashion. Demo 2",
-                path: "fashion-2",
+                title: "Iasi",
+                path: "/",
             },
         ],
     },
-    {
-        title: "Lifestyle",
-        path: "#",
-        items: [
-            {
-                title: "LifeStyle. Demo 1",
-                path: "/lifestyle-1",
-            },
-            {
-                title: "LifeStyle. Demo 2",
-                path: "/lifestyle-2",
-            },
-        ],
-    },
-    {
-        title: "About Us",
-        path: "#",
-        items: [
-            {
-                title: "Agency",
-                path: "/about-agency-1",
-            },
-            {
-                title: "Personal",
-                path: "/about-personal-1",
-            },
-        ],
-    },
+
     {
         title: "Contact",
-        path: "/contacts-agency-1",
+        path: "/",
         items: [],
     },
 ];

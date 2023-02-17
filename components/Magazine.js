@@ -47,7 +47,7 @@ Magazine.Footer = (props) => {
                         <Row className="row">
                             <Col className="col-12 col-sm-6">
                                 <p className="text-sm text-center md:text-left invisible md:visible" style={{ color }}>
-                                    © 2022 Maggy - All Rights Reserved.
+                                    © 2022 - All Rights Reserved.
                                 </p>
                             </Col>
                             <Col className="col-12 col-sm-6">
