@@ -1,5 +1,5 @@
 {
-    "name": "maggy",
+    "name": "medical",
     "private": true,
     "scripts": {
         "dev": "next dev",
