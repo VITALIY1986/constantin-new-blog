@@ -20,43 +20,24 @@ function Fashion({ preview, allPosts }) {
   const mag = ' https://www.arcadiamedical.ro/storage/qsTkVV5NZdm6jdRWymoZJuXioEMDbfXY8qgzaIQ5.jpg'
     const heroPost = allPosts
     const morePosts = allPosts  
-console.log(morePosts[0].coverImage.url)
     return (
         <>
 <Meta />
             <Magazine>
-                <Magazine.Cover image={magazineCover}>
+                <Magazine.Cover image={magazineCover}   unoptimized={true}>
                     <div className="absolute left-3 md:left-8 bottom-3 md:bottom-8">
                         <Animate name="fadeIn" delay="1.2s" duration="1s">
-                            <Image alt="alt" src={morePosts[0].coverImage.url} width={69} height={69}   unoptimized={true} />
+                            <Image alt="alt" src={'/assets/images/other/barcode-qr.png'} width={69} height={69}   unoptimized={true} />
                         </Animate>
                     </div>
                     <Heading className="absolute left-3 md:left-8 top-32 md:top-48 text-white">
-                        <Animate name="fadeInLeftSm" delay="1.2s" duration="2s">
-                            <Heading.Title>
-                                <h1 className="text-5xl text-white font-extrabold uppercase">
-                                    You can
-                                    <br />
-                                    Change
-                                    <br />
-                                    the World
-                                </h1>
-                            </Heading.Title>
-                        </Animate>
-                        <Heading.Subtitle>
-                            <Animate name="fadeIn" delay="1.8s" duration="3s">
-                                <p>
-                                    How Women are Redirecting Hollywood
-                                    <br />
-                                    <b className="text-xs text-primary">By Jasmin Smith</b>
-                                </p>
-                            </Animate>
-                        </Heading.Subtitle>
+                   
+                    
                     </Heading>
                     <Heading className="absolute right-3 md:right-8 bottom-3 md:bottom-8 text-white text-right">
                         <Heading.Title>
                             <Animate name="fadeInRightSm" delay="1.2s" duration="2s">
-                                <h2 className="text-5xl text-white uppercase">
+                                <h2 className="text-5xl text-gray-600 uppercase">
                                     Strong
                                     <br />
                                     Style
@@ -65,7 +46,7 @@ console.log(morePosts[0].coverImage.url)
                         </Heading.Title>
                         <Heading.Subtitle>
                             <Animate name="fadeIn" delay="1.8s" duration="3s">
-                                <p>
+                                <p className="text-gray-500">
                                     New Ways to Wear Denim
                                     <br />
                                     Belt Bags make a Comeback
