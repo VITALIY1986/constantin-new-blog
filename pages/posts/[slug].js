@@ -18,7 +18,7 @@ export default function Post({ post, morePosts, preview }) {
             <Meta />
             <Header />
             <Magazine>
-                <Magazine.Cover image={post.coverImage.url}>
+                <Magazine.Cover image={post?.coverImage.url}>
                     <Magazine.Footer className="absolute bottom-3 w-100" />
                 </Magazine.Cover>
                 <Magazine.Content>
@@ -26,7 +26,7 @@ export default function Post({ post, morePosts, preview }) {
                         <div className="single-post">
                             
                             <div className="single-post__body">
-                            <PostBody content={post.content} />
+                            <PostBody content={post?.content} />
                             </div>
                         </div>
                         <PostNavigation prevLink="#" prevTitle="How much will it Cost to Travel in 2022?" nextLink="#" nextTitle="Which is correct Travelling or Traveling?" className="py-12 my-12" />
