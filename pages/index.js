@@ -14,17 +14,19 @@ import "swiper/css/pagination";
 
 
 // Magazine cover image
-import magazineCover from "../public/assets/images/covers/2.jpg";
+
 
 function Fashion({ preview, allPosts }) {
-  const mag = ' https://www.arcadiamedical.ro/storage/qsTkVV5NZdm6jdRWymoZJuXioEMDbfXY8qgzaIQ5.jpg'
-    const heroPost = allPosts
     const morePosts = allPosts  
+    const AvtorBlogSort = allPosts.filter(word => word.author.name === 'Gabriela');
+    const Avtor = AvtorBlogSort[0].coverImage.url
+    const AvtorTitle = AvtorBlogSort[0].title
+  
     return (
         <>
 <Meta />
             <Magazine>
-                <Magazine.Cover image={magazineCover}   unoptimized={true}>
+                <Magazine.Cover image={Avtor}   unoptimized={true}>
                     <div className="absolute left-3 md:left-8 bottom-3 md:bottom-8">
                         <Animate name="fadeIn" delay="1.2s" duration="1s">
                             <Image alt="alt" src={'/assets/images/other/barcode-qr.png'} width={69} height={69}   unoptimized={true} />
@@ -37,10 +39,9 @@ function Fashion({ preview, allPosts }) {
                     <Heading className="absolute right-3 md:right-8 bottom-3 md:bottom-8 text-white text-right">
                         <Heading.Title>
                             <Animate name="fadeInRightSm" delay="1.2s" duration="2s">
-                                <h2 className="text-5xl text-gray-600 uppercase">
-                                Gabriela 
-                                    <br />
-                                    Grigoras
+                                <h2 className="text-5xl text-gray-600 uppercase w-8">
+                                {AvtorTitle}
+                            
                                 </h2>
                             </Animate>
                         </Heading.Title>
@@ -61,10 +62,11 @@ function Fashion({ preview, allPosts }) {
                     <Block className="py-24 px-4 md:px-8">
                         <Swiper modules={[SwiperPagination]} pagination={{ clickable: true }} className="swiper--light">
                             {morePosts &&
-                       
-                                morePosts.map((item) => (
+                                morePosts
+                                .filter(item => item.author.name !== 'Gabriela' )
+                                .map((item) => (
                                     <SwiperSlide key={item.id}>
-                                        <Post post={item} model={2} max_words={22} image_width={555} image_height={555} />
+                                        <Post post={item} model={2} max_words={22} image_width={555} image_height={555}  />
                                     </SwiperSlide>
                                 ))}
                         </Swiper>
@@ -73,7 +75,9 @@ function Fashion({ preview, allPosts }) {
                         <Row className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-3">
                             {morePosts &&
                                 morePosts.length > 0 &&
-                                morePosts.slice(0, 9).map((item, index) => (
+                                morePosts
+                                .filter(item => item.author.name !== 'Gabriela' )
+                                .map((item, index) => (
                                     <Col key={item.id} className="">
                                         <Animate name="fadeInUpXs" delay={`${index + 3}00ms`} duration="1.8s">
                                             <Post post={item} model={1} image_width={334} image_height={334} image_quality={100} />
@@ -86,7 +90,9 @@ function Fashion({ preview, allPosts }) {
                         <Row className="row row-md row--alt">
                             {morePosts &&
                             
-                              morePosts.map((item, index) => (
+                              morePosts
+                              .filter(item => item.author.name !== 'Gabriela' )
+                              .map((item, index) => (
                                     <Col key={item.id} className="col-12">
                                         <Animate name="fadeInUpXs" delay={`${index + 3}00ms`} duration="1.8s">
                                             <Post post={item} model={2} max_words={14} image_width={600} image_height={600} image_quality={100} hover="move-in-left" />

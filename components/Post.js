@@ -21,7 +21,7 @@ const Post = (props) => {
                                     <div className={styles.post__cover__loading}>
                                         <span className={`afc-spinner afc-spinner--${props.color}`}></span>
                                     </div>
-                                    <Link href={post.slug}>
+                                    <Link href={`/posts/${post.slug}`}>
                                         <a>
                                             <div className="relative">
                                                 <Image src={post.coverImage.url} alt={post.title} width={props.image_width} height={props.image_height}  />
@@ -38,7 +38,7 @@ const Post = (props) => {
                     <div className={styles.post__content__inner}>
                         {post.category && (
                             <div className={`${styles.post__content__category} ${styles["post__content__category--style-1"]}`}>
-                                <Link href={`/category`}>
+                                <Link href={`/posts/${post.slug}`}>
                                     <a>
                                         <span>{post.category}</span>
                                         <span></span>
@@ -47,7 +47,7 @@ const Post = (props) => {
                             </div>
                         )}
                         <h3 className={styles.post__content__title}>
-                            <Link href={post.slug}>
+                            <Link href={`/posts/${post.slug}`}>
                                 <a>{post.title}</a>
                             </Link>
                         </h3>

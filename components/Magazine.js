@@ -13,7 +13,7 @@ const Magazine = (props) => (
 
 Magazine.Cover = (props) => {
     const style = {
-        backgroundImage: `url(${props.image.src})`,
+        backgroundImage: `url(${props.image})`,
     };
 
     return (
