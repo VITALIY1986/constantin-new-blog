@@ -35,7 +35,7 @@ export default function Post({ post, morePosts, preview }) {
                 </Magazine.Content>
             </Magazine>
       
-             <div>{post.title}</div>
+             <div>{post?.title}</div>
               
            </>
   )
