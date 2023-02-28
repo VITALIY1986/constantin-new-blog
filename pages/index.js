@@ -89,10 +89,9 @@ function Fashion({ preview, allPosts }) {
                     <Block className="px-4 md:px-8 pb-8">
                         <Row className="row row-md row--alt">
                             {morePosts &&
-                            
-                              morePosts
-                              .filter(item => item.author.name !== 'Gabriela' )
-                              .map((item, index) => (
+                                 morePosts
+                                .filter(item => item.author.name !== 'Gabriela' )
+                                .map((item, index) => (
                                     <Col key={item.id} className="col-12">
                                         <Animate name="fadeInUpXs" delay={`${index + 3}00ms`} duration="1.8s">
                                             <Post post={item} model={2} max_words={14} image_width={600} image_height={600} image_quality={100} hover="move-in-left" />
