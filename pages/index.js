@@ -39,7 +39,7 @@ function Fashion({ preview, allPosts }) {
                     <Heading className="absolute right-3 md:right-8 bottom-3 md:bottom-8 text-white text-right">
                         <Heading.Title>
                             <Animate name="fadeInRightSm" delay="1.2s" duration="2s">
-                                <h2 className="text-5xl text-gray-600 uppercase w-8">
+                                <h2 className="text-3xl text-white uppercase w-10 mr-3 ">
                                 {AvtorTitle}
                             
                                 </h2>
@@ -47,12 +47,12 @@ function Fashion({ preview, allPosts }) {
                         </Heading.Title>
                         <Heading.Subtitle>
                             <Animate name="fadeIn" delay="1.8s" duration="3s">
-                                <p className="text-gray-500">
+                                <p className="text-white">
                                 Medic specialist 
                                     <br />
-                                    medicină internă
+                                    în otorinolaringologie
                                     <br />
-                                    <b className="text-xs text-primary">Strada Pantelimon Halipa 14, Iași 700661</b>
+                                    <b className="text-xs text-white">Strada Pantelimon Halipa 14, Iași 700661</b>
                                 </p>
                             </Animate>
                         </Heading.Subtitle>
@@ -65,7 +65,7 @@ function Fashion({ preview, allPosts }) {
                                 morePosts
                                 .filter(item => item.author.name !== 'Gabriela' )
                                 .map((item) => (
-                                    <SwiperSlide key={item.id}>
+                                    <SwiperSlide key={item.slug}>
                                         <Post post={item} model={2} max_words={22} image_width={555} image_height={555}  />
                                     </SwiperSlide>
                                 ))}
@@ -78,7 +78,7 @@ function Fashion({ preview, allPosts }) {
                                 morePosts
                                 .filter(item => item.author.name !== 'Gabriela' )
                                 .map((item, index) => (
-                                    <Col key={item.id} className="">
+                                    <Col key={item.slug} className="">
                                         <Animate name="fadeInUpXs" delay={`${index + 3}00ms`} duration="1.8s">
                                             <Post post={item} model={1} image_width={334} image_height={334} image_quality={100} />
                                         </Animate>
@@ -92,7 +92,7 @@ function Fashion({ preview, allPosts }) {
                                  morePosts
                                 .filter(item => item.author.name !== 'Gabriela' )
                                 .map((item, index) => (
-                                    <Col key={item.id} className="col-12">
+                                    <Col key={item.slug} className="col-12">
                                         <Animate name="fadeInUpXs" delay={`${index + 3}00ms`} duration="1.8s">
                                             <Post post={item} model={2} max_words={14} image_width={600} image_height={600} image_quality={100} hover="move-in-left" />
                                         </Animate>

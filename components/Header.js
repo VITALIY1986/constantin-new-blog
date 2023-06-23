@@ -29,7 +29,7 @@ export default function Header(props) {
                 {links.map((link, index) => (
                     <li key={index} className={`mb-6 text-left ${link.items && link.items.length > 0 && dropdown === index && "active"} ${link.items && link.items.length > 0 && "has-children"}`}>
                         <Link href={link.path}>
-                            <a className={`text-xl md:text-4xl font-heading ${dropdown === index && "active"} ${link.path === router.pathname && "text-primary"}`} onClick={(e) => handleClick(index, link)}>
+                            <a className={`text-xl md:text-4xl font-heading ${dropdown === index && "active"} ${link.path === router.pathname && "text-white"}`} onClick={(e) => handleClick(index, link)}>
                                 {link.title}
                             </a>
                         </Link>
@@ -38,7 +38,7 @@ export default function Header(props) {
                                 {link.items.map((child, j) => (
                                     <li key={j}>
                                         <Link href={child.path}>
-                                            <a className={`text-sm md:text-xl font-heading ${child.path === router.pathname && "text-primary"}`} onClick={(e) => handleClick(index, child, e)}>
+                                            <a className={`text-sm md:text-xl font-heading ${child.path === router.pathname && "text-white"}`} onClick={(e) => handleClick(index, child, e)}>
                                                 {child.title}
                                             </a>
                                         </Link>
@@ -67,7 +67,7 @@ export default function Header(props) {
                         <Button
                             type="menu"
                             active={overlay}
-                            className="w-full h-full bg-cyan-500 text-white"
+                            className="w-full h-full bg-blue-500 text-white"
                             onClick={() => {
                                 setOverlay(!overlay);
                             }}
@@ -78,7 +78,9 @@ export default function Header(props) {
                         </Button>
                     </div>
                     <div className={`${styles.header__nav__logo} bg-white font-extrabold font-heading text-black`} style={{ fontSize: 33 }}>
-                        <span>M</span>
+                    <a href="/">
+                    <span>M</span>
+                            </a> 
                     </div>
                 </div>
             </header>
@@ -98,32 +100,12 @@ const links = [
         items: [
             {
                 title: "instagram",
-                path: "/",
+                path: "https://www.instagram.com/dr.guma_constantin_orl",
             },
-            {
-                title: "Facebook",
-                path: "/",
-            },
+         
         ],
     },
-    {
-        title: "Spitalul Clinic",
-        path: "#",
-        items: [
-            {
-                title: "Iasi",
-                path: "/",
-            },
-            {
-                title: "Iasi",
-                path: "/",
-            },
-        ],
-    },
+   
 
-    {
-        title: "Contact",
-        path: "/",
-        items: [],
-    },
+   
 ];
