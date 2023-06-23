@@ -55,7 +55,7 @@ Magazine.Footer = (props) => {
                                    
                                     <li className="ml-3">
                                         <a href="https://www.instagram.com/dr.guma_constantin_orl/" className="hover:opacity-60">
-                                            <Instagram fill={color} width={14} height={14} />
+                                            <Instagram fill={color} width={35} height={35} />
                                         </a>
                                     </li>
                                 </ul>

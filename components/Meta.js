@@ -3,8 +3,7 @@ import Head from "next/head";
 const Meta = ({ title, keywords, description }) => {
     return (
         <Head>
-            <title>Medic specialist
-medicină internă - GABRIELA GRIGORAS </title>
+            <title>Medic specialist - GUMA CONSTANTIN </title>
             <meta charSet="utf-8" />
             <meta name="rating" content="general" />
             <meta name="author" content="www" />
@@ -19,9 +18,9 @@ medicină internă - GABRIELA GRIGORAS </title>
 };
 
 Meta.defaultProps = {
-    title: "Magazine WordPress Theme",
-    keywords: "demo, wordpress, theme, themeforest, envato, magazine, blog",
-    description: "Maggy - Magazine Style WordPress Theme by afracode",
+    title: "Medic specialist - GUMA CONSTANTIN",
+    keywords: "Strada Pantelimon Halipa 14, Iași 700661",
+    description: "Strada Pantelimon Halipa 14, Iași 700661",
 };
 
 export default Meta;

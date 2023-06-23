@@ -22,11 +22,11 @@ const Post = (props) => {
                                         <span className={`afc-spinner afc-spinner--${props.color}`}></span>
                                     </div>
                                     <Link href={`/posts/${post.slug}`}>
-                                        <a>
+                                      
                                             <div className="relative">
                                                 <Image src={post.coverImage.url} alt={post.title} width={props.image_width} height={props.image_height}  />
                                             </div>
-                                        </a>
+                                       
                                     </Link>
                                 </div>
                             </div>
