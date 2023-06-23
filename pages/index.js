@@ -100,7 +100,7 @@ function Fashion({ preview, allPosts }) {
                                 ))}
                         </Row>
                     </Block>
-                    <Magazine.Footer className="mt-2 mb-8" color="#333"/>
+                    <Magazine.Footer className="mt-2 mb-8" color="#333" />
                 </Magazine.Content>
             </Magazine>
         </>
