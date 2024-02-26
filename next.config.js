@@ -7,7 +7,7 @@ module.exports = {
       remotePatterns: [
         {
         
-          hostname: 'images.ctfassets.net',
+        hostname: 'images.ctfassets.net',
         
         },
       ]
