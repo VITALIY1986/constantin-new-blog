@@ -1,10 +1,9 @@
 module.exports = {
-  images: {
-    unoptimized: true,
-  },
+
     generateEtags: false,
     reactStrictMode: true,
     images: {
+      unoptimized: true,
       remotePatterns: [
         {
         
