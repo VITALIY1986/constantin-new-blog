@@ -15,7 +15,7 @@ export default function Post({ post, morePosts, preview }) {
   return (
 
           <>
-            <Meta title={post.title}/>
+         <Meta title={post?.title || 'Заголовок по умолчанию'} />
             <Header />
             <Magazine>
                 <Magazine.Cover image={post?.coverImage.url}>
