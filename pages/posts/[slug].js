@@ -15,7 +15,7 @@ export default function Post({ post, morePosts, preview }) {
   return (
 
           <>
-            <Meta />
+            <Meta title={post.title}/>
             <Header />
             <Magazine>
                 <Magazine.Cover image={post?.coverImage.url}>
@@ -24,7 +24,7 @@ export default function Post({ post, morePosts, preview }) {
                 <Magazine.Content>
                     <Block className="pt-10 md:pt-16 lg:pt-20 xl:pt-24 px-4 md:px-16 xl:px-20 pb-10 md:pb-16">
                         <div className="single-post">
-                            
+                           
                             <div className="single-post__body">
                             <PostBody content={post?.content} />
                             </div>

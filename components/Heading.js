@@ -1,6 +1,7 @@
 import styles from "../styles/Heading.module.scss";
 
 const Heading = (props) => {
+    
     return (
         <div className={`${styles.heading} ${props.className}`} style={props.style}>{props.children}</div>
     )

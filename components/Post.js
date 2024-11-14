@@ -24,7 +24,7 @@ const Post = (props) => {
                                     <Link href={`/posts/${post.slug}`}>
                                       
                                             <div className="relative">
-                                                <Image src={post.coverImage.url} alt={post.title} width={props.image_width} height={props.image_height}  />
+                                                <Image src={post.coverImage.url} alt={post.title} width={props.image_width} height={props.image_height} loading="lazy" quality={40} />
                                             </div>
                                        
                                     </Link>

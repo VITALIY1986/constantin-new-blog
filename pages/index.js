@@ -24,22 +24,22 @@ function Fashion({ preview, allPosts }) {
   
     return (
         <>
-<Meta />
+<Meta title={AvtorTitle}  />
             <Magazine>
                 <Magazine.Cover image={Avtor}   unoptimized={true}>
                     <div className="absolute left-3 md:left-8 bottom-3 md:bottom-8">
                         <Animate name="fadeIn" delay="1.2s" duration="1s">
-                            <Image alt="alt" src={'/assets/images/other/barcode-qr.png'} width={69} height={69}   unoptimized={true} />
+                            <Image alt="alt" src={'/assets/images/other/barcode-qr.png'} width={69} height={69}  unoptimized={true} loading="lazy" quality={40}/>
                         </Animate>
                     </div>
-                    <Heading className="absolute left-3 md:left-8 top-32 md:top-48 text-white">
+                    <Heading className="absolute left-3 md:left-8 top-32 md:top-48 text-white"  >
                    
                     
                     </Heading>
                     <Heading className="absolute right-3 md:right-8 bottom-3 md:bottom-8 text-white text-right">
                         <Heading.Title>
                             <Animate name="fadeInRightSm" delay="1.2s" duration="2s">
-                                <h2 className="text-3xl text-white uppercase w-10 mr-3 ">
+                                <h2 className="text-2xl text-white uppercase w-64 mr-4  text-right">
                                 {AvtorTitle}
                             
                                 </h2>
@@ -48,18 +48,18 @@ function Fashion({ preview, allPosts }) {
                         <Heading.Subtitle>
                             <Animate name="fadeIn" delay="1.8s" duration="3s">
                                 <p className="text-white">
-                                Medic specialist 
+                               gmail: info@orl24.md
                                     <br />
-                                    în otorinolaringologie
+                                 phone: +37368647470 
                                     <br />
-                                    <b className="text-xs text-white">Strada Pantelimon Halipa 14, Iași 700661</b>
+                                    <b className="text-xs text-white">Chishinau</b>
                                 </p>
                             </Animate>
                         </Heading.Subtitle>
                     </Heading>
                 </Magazine.Cover>
-                <Magazine.Content className="bg-white overflow-x-hidden">
-                    <Block className="py-24 px-4 md:px-8">
+              <Magazine.Content className="bg-white overflow-x-hidden">
+                {/*     <Block className="py-24 px-4 md:px-8">
                         <Swiper modules={[SwiperPagination]} pagination={{ clickable: true }} className="swiper--light">
                             {morePosts &&
                                 morePosts
@@ -70,8 +70,8 @@ function Fashion({ preview, allPosts }) {
                                     </SwiperSlide>
                                 ))}
                         </Swiper>
-                    </Block>
-                    <Block className="px-4 md:px-8 pb-8 mb-16">
+                    </Block> */}
+                {/*     <Block className="px-4 md:px-8 pb-8 mb-16">
                         <Row className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-3">
                             {morePosts &&
                                 morePosts.length > 0 &&
@@ -85,7 +85,7 @@ function Fashion({ preview, allPosts }) {
                                     </Col>
                                 ))}
                         </Row>
-                    </Block>
+                    </Block>*/}
                     <Block className="px-4 md:px-8 pb-8">
                         <Row className="row row-md row--alt">
                             {morePosts &&
